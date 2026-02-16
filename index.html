@@ -434,6 +434,44 @@
             box-shadow: 0 4px 15px rgba(0, 71, 171, 0.3);
         }
 
+        /* Rules Section */
+        .rules-wrapper {
+            background: var(--grey);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            border: 2px solid var(--light-blue);
+        }
+
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .rule-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary-blue);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .rule-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-navy);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .rule-card ul {
+            margin-left: 1.2rem;
+            color: var(--text-dark);
+        }
+
+        .rule-card li {
+            margin-bottom: 0.45rem;
+        }
+
         /* Schedule Section */
         .schedule {
             background: var(--light-blue);
@@ -743,6 +781,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#competitions">Competitions</a></li>
+                <li><a href="#rules">Rules</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -804,6 +843,97 @@
                 <p class="card-description">Deliver structured and compelling technical presentations with professional clarity and precision.</p>
                 <a href="https://forms.gle/iLcp4uzRn6S8aNTf7" class="btn">Register</a>
             </div>
+            <div class="competition-card">
+                <div class="card-icon">&#127917;</div>
+                <h3 class="card-title">Cultural Event</h3>
+                <p class="card-description">Participate in singing, dancing, poetry, stand-up comedy, and skit performances.</p>
+                <a href="https://forms.gle/tGNdYUmKimwP8xNu8" class="btn">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules">
+        <h2 class="section-title">Event Circular - Rules & Guidelines</h2>
+        <div class="rules-wrapper">
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>PPT Presentation - Rules</h3>
+                    <ul>
+                        <li>Maximum 10 slides only (including introduction and conclusion).</li>
+                        <li>Presentation time: 4 minutes maximum.</li>
+                        <li>Team size: 1-4 members.</li>
+                        <li>Topic must relate to the event theme.</li>
+                        <li>Format: PPT/PDF only.</li>
+                        <li>Content must be original. No plagiarism allowed.</li>
+                        <li>AI tools allowed only for minor help (grammar, structuring).</li>
+                        <li>Exceeding slide or time limit will lead to disqualification.</li>
+                        <li>Late submissions will not be accepted.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Project Making - Rules</h3>
+                    <ul>
+                        <li>Team size: 1-4 members.</li>
+                        <li>Project must be innovative and original.</li>
+                        <li>Working model is preferred.</li>
+                        <li>Explanation time: 5 minutes.</li>
+                        <li>AI tools allowed only for research assistance.</li>
+                        <li>No copied or previously presented projects.</li>
+                        <li>Judges' decision will be final.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Short Film Making - Rules</h3>
+                    <ul>
+                        <li>Theme: "Unspoken" (emotions or struggles not expressed in words; related to student life or social reality).</li>
+                        <li>Duration: 6-9 minutes (including credits).</li>
+                        <li>Team size: 1-4 members (registered students only).</li>
+                        <li>Format: MP4, minimum 1080p, landscape mode only.</li>
+                        <li>Content must be original. No plagiarism.</li>
+                        <li>No copyrighted music without permission.</li>
+                        <li>Any language allowed; subtitles mandatory if not English.</li>
+                        <li>AI tools allowed only for minor enhancements (not full film generation).</li>
+                        <li>Exceeding time limit, offensive content, plagiarism, or violation of theme will lead to disqualification.</li>
+                        <li>Submit before deadline; late entries will not be accepted.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Reel Making - Rules</h3>
+                    <ul>
+                        <li>Theme must relate to the competition theme.</li>
+                        <li>Duration: 30-60 seconds only.</li>
+                        <li>Format: Vertical (9:16), MP4, minimum 1080p.</li>
+                        <li>Team size: 1-4 members.</li>
+                        <li>Content must be original. No copied or reposted reels.</li>
+                        <li>Copyright-free music only.</li>
+                        <li>Any language allowed; strictly no vulgar or offensive content.</li>
+                        <li>Basic editing allowed; avoid excessive effects.</li>
+                        <li>AI tools allowed only for minor enhancements (not full reel generation).</li>
+                        <li>Exceeding time limit, plagiarism, inappropriate content, or violation of theme will lead to disqualification.</li>
+                        <li>Late submissions will not be accepted.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Cultural Event - Rules</h3>
+                    <ul>
+                        <li>Categories: Singing, Dancing, Poetry, Stand-up Comedy, and Skit.</li>
+                        <li>Team size: 1-4 members (solo or group as per category).</li>
+                        <li>Performance time: 3-5 minutes per entry.</li>
+                        <li>Content must be original, respectful, and suitable for a college audience.</li>
+                        <li>No vulgar, offensive, or discriminatory content allowed.</li>
+                        <li>Use of copyrighted tracks is participant responsibility; prefer royalty-free audio.</li>
+                        <li>AI tools allowed only for minor support (script polishing, background planning), not full content generation.</li>
+                        <li>Judging criteria: creativity, expression, stage presence, and audience engagement.</li>
+                        <li>Exceeding time limit, plagiarism, or inappropriate content may lead to disqualification.</li>
+                        <li>Late registrations/submissions will not be accepted.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -821,6 +951,7 @@
                     <h3 class="day-title">Day 2 – 28th February 2026</h3>
                     <div class="event-item">• Short Film Making</div>
                     <div class="event-item">• Reel Making</div>
+                    <div class="event-item">• Cultural Event (Singing, Dancing, Poetry, Stand-up Comedy, Skit)</div>
                 </div>
             </div>
         </div>
@@ -846,7 +977,7 @@
     <!-- Footer -->
     <footer id="contact">
         <div class="footer-content">
-            <div class="footer-title">SAFE – Student Association of First Year Engineering</div>
+            <div class="footer-title">SAFE – Student Association  First Year Engineering</div>
             <div class="footer-subtitle">Dr. Vithalrao Vikhe Patil College of Engineering</div>
             <div class="divider"></div>
                        <div class="social-icons">
@@ -892,3 +1023,6 @@
 </body>
 
 </html>
+
+
+
